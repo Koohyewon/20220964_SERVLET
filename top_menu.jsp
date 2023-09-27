@@ -1,6 +1,7 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
 
-<nav class="navbar navbar-expand  navbar-white bg-white">
+<!--<nav class="navbar navbar-expand  navbar-dark bg-dark">-->
+<nav class="navbar navbar-expand  navbar-dark" style="background-color: #3CB371;">
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             카테고리
@@ -17,7 +18,7 @@
     </div>
     
     <div>
-        <img src="image\LiveYoung.gif" class="img-fluid" alt="main_image">
+        <img src="image\Liveyoung_banner.gif" class="img-fluid" alt="main_image">
     </div>
     
     <div class="container">
