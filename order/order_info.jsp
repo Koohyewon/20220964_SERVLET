@@ -20,7 +20,7 @@
                         } else {
                             addr = data.jibunAddress;
                         }
-                        document.getElementById('postcode').value = data.zonecode;
+                        document.getElementById('zipCode').value = data.zonecode;
                         document.getElementById("address").value = addr;
                     }
                 }).open();
@@ -69,7 +69,7 @@
                 <div class="form-group row">
                     <label class="col-sm-2">우편번호</label>
                     <div class="col-sm-3">
-                        <input type="text" class="form-control" id="postcode" placeholder="우편번호">
+                        <input name="zipCode" type="text" class="form-control" id="zipCode" placeholder="우편번호">
                         <input type="button" onclick="DaumPostcode()" value="우편번호 찾기"><br>
                     </div>
                 </div>
