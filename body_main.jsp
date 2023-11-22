@@ -27,7 +27,7 @@ String tagline = "하단 페이지 : 확인";%>
             pstmt = conn.prepareStatement(sql); // 연결 생성
             rs = pstmt.executeQuery(); // 쿼리 실행
             while (rs.next()) { // 결과 ResultSet 객체 반복
-                %>
+            %>
             <div class="col-md-4">
                 <div class="card bg-dark text-white">
                     <img src="image/product/<%=rs.getString("p_fileName")%>" class="card-img" alt="...">
@@ -38,7 +38,7 @@ String tagline = "하단 페이지 : 확인";%>
                 </div>
                 <h3><%=rs.getString("p_name")%></h3>
                 <p><%=rs.getString("p_description")%>
-                <p><%=rs.getString("p_UnitPrice")%>원
+                <p><%=rs.getString("p_unitPrice")%>원
                 <p><a href="product_detail.jsp?id=<%=rs.getString("p_id")%>" class="btn btn-secondary" role="button"> 상세 정보 &raquo;></a>
             </div>
             <%

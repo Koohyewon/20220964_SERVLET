@@ -46,18 +46,18 @@
 	String fname = (String) files.nextElement();
 	String fileName = multi.getFilesystemName(fname);
 
-	ProductRepository dao = ProductRepository.getInstance();
+	//ProductRepository dao = ProductRepository.getInstance();
 
-	Product newProduct = new Product();
-	newProduct.setProductId(productId);
-	newProduct.setPname(name);
-	newProduct.setUnitPrice(price);
-	newProduct.setDescription(description);
-	newProduct.setManufacturer(manufacturer);
-	newProduct.setCategory(category);
-	newProduct.setUnitsInStock(stock);
-	newProduct.setCondition(condition);
-    newProduct.setFilename(fileName);
+	//Product newProduct = new Product();
+	//newProduct.setProductId(productId);
+	//newProduct.setPname(name);
+	//newProduct.setUnitPrice(price);
+	//newProduct.setDescription(description);
+	//newProduct.setManufacturer(manufacturer);
+	//newProduct.setCategory(category);
+	//newProduct.setUnitsInStock(stock);
+	//newProduct.setCondition(condition);
+    //newProduct.setFilename(fileName);
 
 
 	String sql = "insert into product values(?,?,?,?,?,?,?,?,?)";
