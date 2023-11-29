@@ -42,11 +42,11 @@
                     <img src="../image/product/<%=rs.getString("p_fileName")%>" class="card-img" alt="...">
                     <h3><%=rs.getString("p_name")%></h3>
                     <p><%=rs.getString("p_description")%>
-                    <p><%=rs.getString("p_UnitPrice")%>원
+                    <p><%=rs.getString("p_unitPrice")%>원
                     <p>
                         <%
                         if (edit.equals("update")) {
-                            %>
+                        %>
                         <a href="product_update.jsp?id=<%=rs.getString("p_id")%>" class="btn btn-success" role="button"> 수정 &raquo;></a>
                         <%
                         } else if (edit.equals("delete")) {
