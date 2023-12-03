@@ -30,27 +30,32 @@
                 <h1 class="display-3">상품 상세 정보</h1>
             </div>
         </div>
+        <%@ include file="../db/db_conn.jsp"%>
         <%
-        String id = request.getParameter("id");
-        Product product = productDAO.getProductById(id);
-        %>
+        String productId = request.getParameter("id");
+        String sql = "select * from product where p_id = ?";
+        pstmt = conn.prepareStatement(sql);
+        pstmt.setString(1, productId);
+        rs = pstmt.executeQuery();
+        if (rs.next()) {
+            %>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3><%=product.getPname()%></h3>
-                    <p><%=product.getDescription()%>
-                    <p><b>상품 코드 : </b><span class="badge badge-danger"> <%=product.getProductId()%></span>
-                    <p><b>제조사</b> : <%=product.getManufacturer()%>
-                    <p><b>분류</b> : <%=product.getCategory()%>
-                    <p><b>재고 수</b> : <%=product.getUnitsInStock()%>
-                    <h4><%=product.getUnitPrice()%>원</h4>
-                    <p><form name="addForm" action="../cart/product_cart_add.jsp?id=<%=product.getProductId()%>" method="post">
+                    <h3><%=rs.getString("p_name")%></h3>
+                    <p><%=rs.getString("p_description")%>
+                    <p><b>상품 코드 : </b><span class="badge badge-danger"> <%=rs.getString("p_id")%></span>
+                    <p><b>제조사</b> : <%=rs.getString("p_manufacturer")%>
+                    <p><b>분류</b> : <%=rs.getString("p_category")%>
+                    <p><b>재고 수</b> : <%=rs.getLong("p_unitsInStock")%>
+                    <h4><%=rs.getInt("p_unitPrice")%>원</h4>
+                    <p><form name="addForm" action="../cart/product_cart_add.jsp?id=<%=rs.getString("p_id")%>" method="post">
                     <a href="#" class="btn btn-info" onclick="addToCart()"> 상품 주문 &raquo;</a> 
                     <a href="../cart/product_cart.jsp" class="btn btn-warning"> 장바구니 &raquo;</a>
                     </form>
 
                     <div class="card bg-dark text-white">
-                        <img src="image/product/<%=product.getFilename()%>" class="card-img" alt="...">
+                        <img src="../image/product/<%=rs.getString("p_fileName")%>" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">상품 이미지 원본</h5>
                             <p class="card-text">출처 : 구글 검색</p>
@@ -58,6 +63,15 @@
                     </div>
                 </div>
             </div>
+            <%
+            }
+            if (rs != null)
+                rs.close();
+            if (pstmt != null)
+                pstmt.close();
+            if (conn != null)
+                conn.close();
+            %>
             <hr>
         </div>
         <%@ include file="footer.jsp" %>
