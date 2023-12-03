@@ -20,11 +20,11 @@ int total_page = ((Integer) request.getAttribute("total_page")).intValue();
         <title>고객센터 게시판</title>
         <script type="text/javascript">
             function checkForm() {	
-                if (${sessionId==null}) {
-                    alert("로그인 해주세요.");
-                    location.href = "../login/login_user.jsp"
-                    return false;
-                }
+                //if (${sessionId==null}) {
+                //    alert("로그인 해주세요.");
+                //    location.href = "../member/login_user.jsp"
+                //    return false;
+                //}
                 location.href = "./BoardWriteForm.do?id=<%=sessionId%>"
             }
         </script>
@@ -37,7 +37,7 @@ int total_page = ((Integer) request.getAttribute("total_page")).intValue();
             </div>
         </div>
         <div class="container">
-            <form action="<c:url value='./BoardListAction.do'/>" method="post">
+            <form action="<c:url value='./BoardListAction.do'/>" method="post" accept-charset="UTF-8">>
                 <div>
                     <div class="text-right">
                         <span class="badge badge-success">전체 <%=total_record%>건</span>
@@ -77,6 +77,7 @@ int total_page = ((Integer) request.getAttribute("total_page")).intValue();
                                     <font color='4C5317'><b> [${i}]</b></font>
                                 </c:when>
                                 <c:otherwise>
+                                    
                                     <font color='4C5317'> [${i}]</font>
                                 </c:otherwise>
                             </c:choose>
