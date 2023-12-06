@@ -75,7 +75,7 @@ String tagline = "하단 페이지 : 확인";%>
     <div class="container">
         <div class="text-center">
             <h3>
-                <%=tagline%>
+                
             </h3>
         </div>
         <hr>

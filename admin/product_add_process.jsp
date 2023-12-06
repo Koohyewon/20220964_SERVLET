@@ -66,7 +66,7 @@
 	pstmt.setString(2, name);
 	pstmt.setString(3, unitPrice);
 	pstmt.setString(4, description);
-	pstmt.setString(5, manufacturer);s
+	pstmt.setString(5, manufacturer);
     pstmt.setString(6, category);
 	pstmt.setString(7, unitsInStock);
 	pstmt.setString(8, condition);
