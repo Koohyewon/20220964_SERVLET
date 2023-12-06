@@ -17,6 +17,9 @@ public class Board_controller extends HttpServlet {
     private static final long serialVersionUID = 1L;
     static final int LISTCOUNT = 5; 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=utf-8");
+		response.setCharacterEncoding("utf-8");
+        
         doPost(request, response);
     }
     

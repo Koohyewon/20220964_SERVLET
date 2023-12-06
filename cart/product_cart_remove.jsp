@@ -18,6 +18,13 @@
 	}
 
 	ArrayList<Product> cartList = (ArrayList<Product>) session.getAttribute("cartlist");
+
+	if (cartList == null || cartList.isEmpty()) {
+		// 세션이 비었다면 바로 리턴하여 작업 중단
+		response.sendRedirect("product_cart.jsp");
+		return;
+	}
+
 	Product goodsQnt = new Product();
 	for (int i = 0; i < cartList.size(); i++) { // 상품리스트 하나씩 출력하기
 		goodsQnt = cartList.get(i);

@@ -20,11 +20,11 @@ int total_page = ((Integer) request.getAttribute("total_page")).intValue();
         <title>고객센터 게시판</title>
         <script type="text/javascript">
             function checkForm() {	
-                //if (${sessionId==null}) {
-                //    alert("로그인 해주세요.");
-                //    location.href = "../member/login_user.jsp"
-                //    return false;
-                //}
+                if (${sessionId==null}) {
+                    alert("로그인 해주세요.");
+                    location.href = "../member/login_user.jsp"
+                    return false;
+                }
                 location.href = "./BoardWriteForm.do?id=<%=sessionId%>"
             }
         </script>

@@ -1,8 +1,5 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
-<%	
-%><%@ page contentType = "text/html;charset=utf-8" %>
-
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -21,11 +18,11 @@
             </div>
         </div>
         <div class="container">
-            <form name="newMember" action="member_join_process.jsp" class="form-horizontal" method="post" enctype ="multipart/form-data">
+            <form action="member_join_process.jsp" name="newMember" class="form-horizontal" method="post" onsubmit="return checkForm()">
                 <div class="form-group row">
                     <label class="col-sm-2">아이디</label>
                     <div class="col-sm-3">
-                        <input type="text" id ="login_id" name="login_id" class="form-control" >
+                        <input type="text" id ="id" name="id" class="form-control" >
                     </div>
                 </div>
                 <div class="form-group row">
@@ -42,22 +39,45 @@
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2">성별</label>
-                    <div class="col-sm-3">
-                        <input type="text" id ="gender" name="gender" class="form-control">
-                    </div>
+                    <div class="col-sm-10">
+					    <input name="gender" type="radio" value="남"/>남
+					    <input name="gender" type="radio" value="여"/>여
+				    </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2">생일</label>
-                    <div class="col-sm-3">
-                        <input type="date" id ="birth" name="birth" class="form-control">
-                    </div>
-                </div>
+				<label class="col-sm-2">생일</label>
+				<div class="col-sm-4">
+					<input name="birthyy" type="text" maxlength="4" placeholder="년도(4자리)" size="6">
+					<select name="birthmm">
+						<option value="">월</option>
+						<option value="01">1</option>
+						<option value="02">2</option>
+						<option value="03">3</option>
+						<option value="04">4</option>
+						<option value="05">5</option>
+						<option value="06">6</option>
+						<option value="07">7</option>
+						<option value="08">8</option>
+						<option value="09">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+					<input type="text" name="birthdd" maxlength="2" placeholder="일" size="4">				
+				</div>
+			</div>
                 <div class="form-group row">
-                    <label class="col-sm-2">메일주소</label>
-                    <div class="col-sm-3">
-                        <input type="text" id ="mail" name="mail" class="form-control" >
-                    </div>
-                </div>
+				<label class="col-sm-2">이메일</label>
+				<div class="col-sm-10">
+					<input name="mail1" type="text" maxlength="50">@
+					<select name="mail2">
+						<option>ggmail.com</option>
+						<option>nnate.com</option>
+						<option>kkakao.com</option>
+						<option>nnaver.com</option>
+					</select>
+				</div>
+			</div>
                 <div class="form-group row">
                     <label class="col-sm-2">폰번호</label>
                     <div class="col-sm-3">
@@ -72,11 +92,27 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-offset-2 col-sm-10 ">
-                        <input type ="button" class="btn btn-primary" value="가입" onclick ="Checkjoin()">
+                        <input type ="submit" class="btn btn-primary" value="가입">
                         <a href="login_user.jsp" class="btn btn-sm btn-success pull-right">로그인(이전 페이지로)</a>
                     </div>
                 </div>
             </form>
         </div>
+        <script type="text/javascript">
+		function checkForm() {
+			if(!document.newMember.id.value) {
+				alert("아이디를 입력하세요!");
+				return false;
+			}
+			if(!document.newMember.password.value) {
+				alert("비밀번호를 입력하세요!");
+				return false;
+			}
+			if(!document.newMember.name.value) {
+				alert("이름을 입력하세요!");
+				return false;
+			}
+		}
+	</script>
     </body>
 </html>

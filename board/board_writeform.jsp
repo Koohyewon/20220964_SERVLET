@@ -1,8 +1,8 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%
-String name = (String) request.getAttribute("name");	
+
+<% 
+String name = (String) session.getAttribute("name"); 
 %>
 <html>
     <head>
@@ -31,6 +31,7 @@ String name = (String) request.getAttribute("name");
     </script>
     <body>
         <jsp:include page="../top_menu.jsp" />
+
         <div class="jumbotron">
             <div class="container">
                 <h1 class="display-3">게시판(고객센터)</h1>
@@ -68,5 +69,11 @@ String name = (String) request.getAttribute("name");
             <hr>
         </div>
         <jsp:include page="../footer.jsp" />
+
     </body>
 </html>
+
+
+
+
+
