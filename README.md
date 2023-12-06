@@ -59,9 +59,9 @@
 ### 세션 및 장바구니 기능 추가
 
 ## 연습문제
-## 장바구니 페이지 상단 로고 이미지 깨짐 현상 수정하기
+### 장바구니 페이지 상단 로고 이미지 깨짐 현상 수정하기
 ### ![10주차 연습문제2](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/ded02915-a495-4125-8bc9-07810f0d6652)
-## 상품 선택 삭제에서 현재 세션이 비었는지 먼저 확인하는 추가 코드 작성
+### 상품 선택 삭제에서 현재 세션이 비었는지 먼저 확인하는 추가 코드 작성
 ### ![10주차 연습문제3](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/f5a0c4dd-8d93-449f-8530-b8c3a1b9921d)
 ### ![10주차 연습문제1](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/e907f67b-31d1-48bd-b3f6-22d0d6315676)
 
@@ -116,14 +116,14 @@
 ## 연습문제
 ### 1. 회원가입 기능 구현하기
 ### ![14주차 연습문제](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/c126e232-f1c1-4332-bfc8-7e906e91b3dc)
-#### 로그인 화면
+### 로그인 화면
 ### ![14주차 연습문제2](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/d553ab8a-f65a-4b3f-855f-a8bc5edb84e4)
-#### 로그인 화면에서 회원가입 버튼을 누르면 회원가입 창으로 넘어간다.
+### 로그인 화면에서 회원가입 버튼을 누르면 회원가입 창으로 넘어간다.
 ### ![14주차 연습문제3](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/b32eac16-566e-4355-9731-36b0cb358e97)
-#### 회원가입 내용을 입력해 가입 버튼을 누르면 데이터베이스에 저장되는 것을 볼 수 있다.
+### 회원가입 내용을 입력해 가입 버튼을 누르면 데이터베이스에 저장되는 것을 볼 수 있다.
 ### ![14주차 연습문제4](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/8bae9b25-99f5-4c74-8cc7-b269332e509f)
 ### ![14주차 연습문제5](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/69abd1aa-2cb0-4424-89f9-f0ff42f5c6b4)
-#### 이후 로그인 창에서 회원가입 한 아이디로 로그인을 진행하면 상단에 자신의 아이디가 떠있는 것을 볼 수 있다.
+### 이후 로그인 창에서 회원가입 한 아이디로 로그인을 진행하면 상단에 자신의 아이디가 떠있는 것을 볼 수 있다.
 ### ![14주차 연습문제6](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/b8e5f83e-4ca1-4d5e-aab9-48eda049fedb)
 ### ![14주차 연습문제7](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/f1f09b51-f476-46ef-824d-e8a85853930f)
 ### ![14주차 연습문제8](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/2756a43d-370e-4428-b973-e51e796699c6)
