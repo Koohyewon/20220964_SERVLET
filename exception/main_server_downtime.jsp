@@ -2,7 +2,7 @@
 <%@ page import="dto.Product"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="example.*" %>
-<%@ page errorPage = "exception/product_not_found.jsp" %>
+<%@ page errorPage = "exception/main_server_downtime.jsp" %>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <html>
     <head>
@@ -17,7 +17,7 @@
 	<%@ include file="../top_menu.jsp" %>
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">상품 정보 에러! 홈페이지 관리자에게 문의해 주세요.</h1>
+			<h1 class="display-3">404에러 : 요청된 페이지가 존재하지 않습니다.</h1>
 		</div>
 	</div>
     <%@ include file="../footer.jsp" %>
