@@ -129,6 +129,11 @@
 ### ![14주차 연습문제8](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/2756a43d-370e-4428-b973-e51e796699c6)
 
 
+# 수업 이외 구현
+### 'product_detail_ad.jsp'는 데이터베이스와 연동되지 않은 코드였으나, 자발적으로 데이터베이스에 연결해 화면에 출력해보았다.
+### ![image](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/df64022b-10dc-4b93-88e1-8705dc7a10c6)
+### ![image](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/7a788ddd-1710-4eed-b494-064fbc3a130e)
+### ![image](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/7724cb77-84aa-4ba8-a1de-1e4a3055beb1)
 
 
 
