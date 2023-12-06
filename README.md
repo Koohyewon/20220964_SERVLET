@@ -127,7 +127,7 @@
 ### ![14주차 연습문제6](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/b8e5f83e-4ca1-4d5e-aab9-48eda049fedb)
 ### ![14주차 연습문제7](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/f1f09b51-f476-46ef-824d-e8a85853930f)
 ### 또한, c:choose, c:when, c:otherwise를 이용해서 로그인 하기 전에는 상단에 로그인 버튼을, 로그인 이후에는 본인의 ID와 로그아웃이 상단에 노출될 수 있도록 했다.
-# ![14주차 연습문제8](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/2756a43d-370e-4428-b973-e51e796699c6)
+### ![14주차 연습문제8](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/2756a43d-370e-4428-b973-e51e796699c6)
 
 
 # 수업 이외 구현
