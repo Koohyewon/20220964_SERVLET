@@ -7,9 +7,10 @@
 
 # 3주차
 ## 수업
-### 쇼핑몰 메인 페이지 모듈화 완료
-### forward 액션 태그 확인 완료
+#### 쇼핑몰 메인 페이지 모듈화 완료
+#### forward 액션 태그 확인 완료
 ## 연습문제
+#### JSP 자바 코드 분리하기 
 ![3주차 연습문제1](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/39f7dc5f-683c-4478-8375-d219a7f138c8)
 ![3주차 연습문제2](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/57776741-a0a0-4744-897c-2d076fdbf7f5)
 ![3주차 연습문제3](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/5e9f7285-0dcc-4189-829f-788b71aceea0)
