@@ -62,7 +62,7 @@
 ## 장바구니 페이지 상단 로고 이미지 깨짐 현상 수정하기
 ![10주차 연습문제2](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/ded02915-a495-4125-8bc9-07810f0d6652)
 ## 상품 선택 삭제에서 현재 세션이 비었는지 먼저 확인하는 추가 코드 작성
-![10주차 연습문제3](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/f5a0c4dd-8d93-449f-8530-b8c3a1b9921d)
+### ![10주차 연습문제3](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/f5a0c4dd-8d93-449f-8530-b8c3a1b9921d)
 ![10주차 연습문제1](https://github.com/Koohyewon/20220964_SERVLET/assets/127907814/e907f67b-31d1-48bd-b3f6-22d0d6315676)
 
 
